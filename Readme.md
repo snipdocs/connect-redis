@@ -1,3 +1,7 @@
+# This is just a Fork for testing purposes
+
+Original repo can be found here [visionmedia / connect-redis](https://github.com/visionmedia/connect-redis)
+
 
 # Connect Redis
 
@@ -10,7 +14,7 @@ connect-redis is a Redis session store backed by [node_redis](http://github.com/
 	  $ npm install connect-redis
 
 ## Options
-  
+
   - `client` An existing redis client object you normally get from `redis.createClient()`
   - `host` Redis server hostname
   - `port` Redis server portno
@@ -33,5 +37,5 @@ connect-redis is a Redis session store backed by [node_redis](http://github.com/
     );
 
  This means express users may do the following, since `express.session.Store` points to the `connect.session.Store` function:
- 
+
     var RedisStore = require('connect-redis')(express);
